@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+ <head>   
+<title>Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5e24051d04.js" crossorigin="anonymous"></script>
+</head>
+<style>
+body {
+  background-color: rgb(245, 246, 251);
+  overflow: hidden;
+ 
+}
+
+
+.lside{ 
+	background:rgb(251, 251, 251); 
+     width:12vw; 
+	height:100vh; 
+	float:left;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+	
+	padding-top: 3%;
+	
+	
+	
+} 
+
+ul.subdiv {
+  list-style-type: none;
+  margin:0%;
+  padding: 0;
+  line-height: 350%;
+  font-family:  'Fredoka One', cursive;
+  position: relative;
+  left:20%;
+  font-size: medium;
+  position: relative;
+  bottom:31%;
+
+  
+}
+
+ul.greydivi{
+
+	list-style-type: none;
+  margin:0;
+  padding: 0;
+  line-height: 350%;
+  font-family:  'Fredoka One', cursive;
+  color: rgba(153, 141, 141, 0.836);
+  font-size:medium;
+  position: relative;
+  left:20%;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.mside{
+	background:rgb(248, 229, 233); 
+     width:59vw; 
+	height:18vh;
+	float:left;
+	margin-left:3%;
+	margin-top:2%;
+	border-radius: 10px;
+	font-weight: 900;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding-top: 2% ;
+	color: rgb(186,140,143);
+
+	
+}
+
+.bfour{
+	background:rgb(251, 251, 251); 
+     width:24vw; 
+	height:42vh;
+	float:left;
+	margin-left:3%;
+	margin-top:2%;
+	border-radius: 15px;
+	
+
+}
+
+.bfive{
+	background:rgb(251, 251, 251); 
+     width:33vw; 
+	height:42vh;
+	float:left;
+	margin-left:2%;
+	margin-top:2%;
+	border-radius: 15px;
+
+}
+
+.textone{
+
+	
+	background:rgb(76, 76, 169); 
+     width:19vw; 
+	height:12vh;
+	float:left;
+	margin-left:3%;
+	margin-top:3%;
+	border-radius: 15px;
+	font-family:'Fredoka One', cursive;
+}
+
+.texttwo{
+	background:rgb(76, 76, 169);
+	opacity:0.5;
+     width:19vw; 
+	height:12vh;
+	float:left;
+	margin-left:1%;
+	margin-top:3%;
+	border-radius: 15px;
+	font-family:'Fredoka One', cursive;
+	
+
+}
+
+
+.textthree{
+	background:rgb(255, 128, 139); 
+     width:19vw; 
+	height:12vh;
+	float:left;
+	margin-left:1%;
+	margin-top:3%;
+	border-radius: 15px;
+	font-family:'Fredoka One', cursive;
+}
+.ldivi{
+
+    text-align:center;
+    letter-spacing: 1px;
+    font-family: 'Fredoka One', cursive;
+    font-size: large;
+	position:relative;
+	bottom:4%;
+
+}
+
+
+
+
+
+
+.upbutton{
+	background:rgb(92, 142, 251); 
+     width:8vw; 
+	height:7vh;
+	position:relative;
+	top:2%;
+	left:5%;
+
+	
+
+	border-radius: 15px;
+	font-family: 'Fredoka One', cursive;
+	font-size: small;
+	color: white;
+	
+}
+
+.dboard{
+
+
+text-align:center;
+position: relative;
+bottom:-2vh;
+right:37%;
+font-family:  'Fredoka One', cursive;
+letter-spacing: 1px;
+font-size:medium;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.weltext{
+
+	
+	padding-left:70px ;
+	font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+	color:rgb(190, 96, 89);
+
+	
+
+
+}
+
+.ltext{
+
+
+	font-size: 15px;
+	float:left;
+	font-family:'Fredoka One', cursive;
+	position: relative;
+	left:20px;
+	top: 10px;
+
+}
+
+.tstext{
+
+	font-family:'Fredoka One', cursive;
+	position: relative;
+	left:20px;
+	top: 10px;
+
+
+}
+
+
+
+
+
+
+.rside{ 
+	background: rgb(251, 251, 251);
+    float:right;
+     width:22vw; 
+	height:100vh; 
+	margin-top: -2vh;
+
+}
+
+.gramtext{
+
+
+position: relative;
+top:10px;
+left:15px;
+color: white;
+}
+.phtext{
+
+position: relative;
+top:10px;
+left:15px;
+color: white;
+
+
+
+}
+.voctext{
+
+position: relative;
+top:10px;
+left:15px;
+color: white;
+}
+
+.gup{
+
+color: rgb(122, 122, 189);
+font-size:small;
+
+text-align: center;
+margin-top:15px;
+margin-right: 60px;
+
+}
+.pup  {
+color:rgb(175, 175, 240);
+font-size:small;
+
+text-align: center;
+margin-top:15px;
+margin-right: 60px;
+
+
+}
+
+.vup{
+
+color:rgb(240, 188, 193);
+font-size:small;
+
+text-align: center;
+margin-top:15px;
+margin-right: 60px;
+
+
+
+
+}
+
+
+
+
+
+
+
+.logtext{
+
+
+position: relative;
+top:5px;
+left:20px;
+font-family:  'Fredoka One', cursive;
+font-weight:500;
+letter-spacing: 0px;
+}
+.anntext{
+
+
+position: relative;
+top:20px;
+left:80px;
+font-family:  'Fredoka One', cursive;
+letter-spacing: 0px;
+
+}
+
+.stutext{
+
+position: relative;
+top:22px;
+left:100px;
+font-family:  'Fredoka One', cursive;
+letter-spacing: 0px;
+color:rgba(153, 141, 141, 0.836);
+
+
+}
+.engtext{
+position: relative;
+top:60px;
+left:50px;
+font-family:   'Fredoka One', cursive;
+letter-spacing: 0px;
+font-size: medium;
+font-weight:100;
+color:rgb(53, 48, 48);
+}
+.hitext{
+position: relative;
+top:63px;
+left:50px;
+font-family:  'Fredoka One', cursive;
+letter-spacing: 0px;
+font-size: small;
+color:rgba(153, 141, 141, 0.836);
+
+
+}
+.sptext{
+	position: relative;
+top:80px;
+left:50px;
+font-family:   'Fredoka One', cursive;
+color:rgb(53, 48, 48);
+letter-spacing: 0px;
+font-size:medium;
+
+
+
+
+}
+.adtext{
+position: relative;
+top:83px;
+left:50px;
+font-family:  'Fredoka One', cursive;
+letter-spacing: 0px;
+font-size: small;
+color:rgba(153, 141, 141, 0.836);
+
+
+}
+.remtext{
+font-family:  'Fredoka One', cursive;
+letter-spacing: 0px;
+position: relative;
+top:100px;
+right:20px;
+}
+ul.sectionhead{
+	font-size: 14px;
+	position: relative;
+    top:130px;
+    left:50px;
+	line-height: 30px;
+	list-style-type: none;
+   margin:0px;
+  padding: 0;
+  font-family:  'Fredoka One', cursive;
+
+
+}
+
+.firstsub{
+	color: rgba(153, 141, 141, 0.836);
+	font-size: 13px;
+	position: relative;
+	bottom:13px;
+
+
+}
+.secsub{
+	color:rgba(153, 141, 141, 0.836);
+	font-size: 13px;
+	position: relative;
+	bottom:14px;
+
+
+}
+.thirdsub{
+	color: rgba(153, 141, 141, 0.836);
+	font-size: 13px;
+	position: relative;
+	bottom:13px;
+
+
+}
+.youhead{
+
+position: relative;
+left:30px;
+font-family:  'Fredoka One', cursive;
+top:20px;
+
+}
+
+.upbox{
+	
+	background: rgb(245, 246, 251);
+     width:10vw; 
+	height:25vh;
+	position:relative;
+	bottom:50px;
+	margin-left:11px;
+	margin-top:60px;
+	border-radius: 15px;
+
+}
+
+.uptextdown{
+
+position: relative;
+top:15px;
+left:20px;
+
+
+
+}
+
+.protext{
+
+	color:rgba(153, 141, 141, 0.836);
+	font-family:  'Fredoka One', cursive;
+	font-size: 12px;
+	position:relative;
+	top:2px;
+
+
+
+}
+
+.perctext{
+
+color:black;
+font-family: 'Ubuntu', sans-serif;
+font-size: 15px;
+line-height: 25px;
+font-weight:700;
+
+
+}
+.far{
+
+margin-right: 10px;
+margin-left: -10px;
+}
+
+.fas{
+
+	margin-right: 10px;
+	margin-left: -10px;
+
+}
+
+.b2box{
+float: left;
+height: 5vh;
+width:3vw;
+background-color: rgba(240, 232, 232, 0.836);
+margin-top: 20%;
+border-radius: 10px;
+margin-right: -25px;
+margin-left: 8px;
+
+
+
+
+
+}
+.b2text{
+
+text-align: center;
+margin-top: 7px;
+font-family: 'Fredoka One', cursive;
+
+
+
+
+}
+
+.c1box{
+float: left;
+height: 5vh;
+width:3vw;
+background-color: rgba(240, 232, 232, 0.836);
+margin-top: 27%;
+border-radius: 10px;
+margin-right: -25px;
+margin-left: -12px;
+
+
+
+
+
+}
+
+.c1text{
+
+text-align: center;
+margin-top: 7px;
+font-family:'Fredoka One', cursive;
+
+
+
+
+}
+
+.boxico1{
+float: left;
+height: 5vh;
+width:3vw;
+background-color: rgba(241, 193, 193, 0.836);
+margin-top: 2%;
+border-radius: 10px;
+margin-right: 2px;
+margin-left: -70px;
+}
+.boxico2{
+float: left;
+height: 5vh;
+width:3vw;
+background-color: rgba(210, 222, 240, 0.836);
+margin-top: 2%;
+border-radius: 10px;
+margin-right: 25px;
+margin-left: -40px;
+}
+.boxico3{
+float: left;
+height: 5vh;
+width:3vw;
+background-color: rgba(210, 222, 240, 0.836);
+margin-top: 2%;
+border-radius: 10px;
+margin-right: 25px;
+margin-left: -40px;
+
+
+
+
+
+}
+.gsmall{
+
+float: left;
+background-color: rgb(122, 122, 189);
+color: white;
+height: 7.5vh;
+width:4vw;
+border-radius: 8px;
+margin-left:20px ;
+margin-top: 15px;
+}
+
+.psmall{
+float: left;
+background-color: rgb(127, 127, 241);
+color: white;
+height: 7.5vh;
+width:4vw;
+border-radius: 8px;
+margin-left:20px ;
+margin-top: 15px;
+}
+.vsmall{
+
+	float: left;
+background-color: rgb(245, 147, 155);
+color: white;
+
+height: 7.5vh;
+width:4vw;
+border-radius: 8px;
+margin-left:20px ;
+margin-top: 15px;
+
+
+}
+
+.boxofresult{
+
+font-size:small;
+font-family: 'Fredoka One', cursive;
+line-height: 4px;
+margin-left: 20px;
+margin-top: 16px;
+
+
+
+
+
+}
+
+.profilepic{
+
+text-align: center;
+margin-top: 30px;
+
+
+
+}
+
+.upimg{
+
+float:right;
+margin-top:-175px;
+height:20vh;
+width:10vw;
+margin-right: 20px;
+
+}
+.folderimg{
+text-align:center ;
+
+
+
+}
+
+
+
+
+</style>
+<body>
+	
+
+<div class="box lside">
+	<div class="ldivi"><h4><img src="https://i.pinimg.com/originals/4d/f3/77/4df3774f7bfb2ca2721b0fe053259d6a.jpg"   alt="" width=20vw height=20vh >  Linglee     </h4></div>
+
+
+
+
+  <div>
+	<ul class="subdiv">
+		<li>   <i class="fas fa-columns" style="color:rgba(66, 61, 61, 0.836)" ></i>Dashboard</li>
+	</ul> 
+
+
+ 
+	<ul class="greydivi">
+		<li>  <i class="far fa-folder" ></i>    Classes</li>
+		<li> <i class="fas fa-box"></i>  Resources</li>
+		<li> <i class="fas fa-inbox"></i>  Learning Plan</li>
+		<li>  <i class="far fa-comment-alt"></i>          Chat</li>
+		<li><i class="far fa-edit"  ></i>Settings</li>
+		
+		</ul>
+	</div>
+  
+
+  <div>	
+	
+	
+  <div class=upbox>
+	  <div class="folderimg">
+	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9Zq_xWuk-SHOFNjxr4fcmVWU4jZ8A-xwCPA&usqp=CAU" width=80vw height=80vh  >
+	  </div>
+	
+	
+	<div class="protext">Upgrade to <b style= color:black;>PRO</b> for<p style= text-align:center;> more resources.</p></div>	<div class="box upbutton"><div class="uptextdown">Upgrade</div></div>
+</div>
+	
+	
+
+</div> 
+</div>
+
+
+<div class=dboard>Dashboard</div>
+
+
+
+
+
+<div class="box mside">
+	
+	
+	
+  <div class="weltext">
+	 
+
+	
+	
+	Welcome back Anna!<br>
+	<div class="perctext">
+		
+	<p>You've learned 80% of your goal this week!<br>Keep it up and improve your results!</p>
+	
+	</div>
+
+	
+	<img class="upimg" src="download.png" alt="">
+  </div>
+
+</div> 
+<div class="box rside"> 
+	<div class="logtext">
+	  Logout
+	</div>
+	<div class="profilepic">
+	<img src="https://thumbs.dreamstime.com/b/grey-woman-avatar-design-ai-supported-81266488.jpg" alt="" style="width: 10vw; padding-top: 4vh;">
+	</div>
+
+     
+
+    <div class="anntext">
+		Anna Morrison
+    </div>
+	<div class="stutext">
+		Student
+	</div>
+	<div>
+		<div class="b2box"> <div class="b2text"> B2          </div>                </div>
+		<div class="engtext">
+		English
+   		</div>
+		<div class="hitext">
+		High intermediate
+		</div>
+		<div class="c1box"> <div class="c1text"> C1       </div>  </div>
+		<div class="sptext">
+		Spanish
+    	</div>
+		<div class="adtext">
+		Advanced
+	</div>
+	</div>
+	<div class="remtext">
+		Reminders
+	</div>
+	<div>
+		<ul class="sectionhead">
+			<div class="boxico1">  <div style= "color: rgb(221, 107, 123); margin-left: 22px ; margin-top: 3px"><i class="fas fa-exclamation-circle"></i></div> </div>
+			<li>Eng-Vocabulary test</li>
+			<div class="firstsub">24 Sep 2019, Friday</div>
+			<div class="boxico2">   <div  style= "color: rgb(79, 108, 201); margin-left: 22px ; margin-top: 3px"><i class="far fa-envelope"></i> </div>         </div>
+			<li>Eng-Send grammer homework</li>
+			<div class="secsub">29 Sep 2019, Wednesday</div>
+			<div class="boxico3">   <div style= "color: rgb(79, 108, 201); margin-left: 22px ; margin-top: 3px"  ><i class="far fa-envelope"></i> </div>         </div>
+			<li>Spanish-Send essay</li>
+			<div class="thirdsub">05 oct 2019, Monday</div>
+			
+			</ul>
+
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> 
+<div class="box bfour"> 
+    <div class="ltext">
+	Latest results 
+ </div>
+<div>
+
+	<ul style="list-style:none;"></ul>          
+		<li><div class="boxofresult"><p>Unit 5-<span style="color:rgb(125, 123, 134)">Technology</span></p></div></li>
+		<li><div class="boxofresult"><p>Unit 12-<span style="color:rgb(125, 123, 134)">Ecology</span></p></div></li>
+		<li><div class="boxofresult"><p>Unit 9-<span style="color:rgb(125, 123, 134)">Real Estate</span></p></div></li>
+		<li><div class="boxofresult"><p>Unit 8-<span style="color:rgb(125, 123, 134)" >Education</span></p></div></li>
+		<li><div class="boxofresult"><p>Unit 16-<span style="color:rgb(125, 123, 134)" >job market</span></p></div></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</ul>  
+
+
+
+</div>
+
+
+
+
+</div> 
+<div class="box bfive">
+	
+   <div class="tstext">
+	Time spent on learning
+
+  </div>
+
+
+</div>
+<div class=youhead>Yourcourses</div>
+
+
+
+
+
+<div class="box textone">
+	<div class="gsmall" ><div style= "margin-top: 15px ; margin-left:13px " > B2   </div>     </div>
+	<div class="gup">Business English</div>
+    <div class="gramtext">
+	  Grammar
+
+
+  </div>	
+	
+</div>
+<div class="box texttwo">
+	<div class="psmall"><div style= "margin-top: 15px ; margin-left:13px " > B2   </div>  </div>
+	<div class="pup">Common English</div>
+	<div class="phtext">
+	
+	Phrasal verbs
+</div>
+
+</div> 
+<div class="box textthree">
+	<div class="vsmall">    <div style= "margin-top: 15px ; margin-left:13px " > C2   </div>  </div>
+	<div class="vup">Business Spanish</div>
+	<div class="voctext">
+    Vocabulory
+	<div>
+
+
+
+</div> 
+
+</body>
+</html>
